@@ -2466,8 +2466,11 @@ function TechnicianCalendarPathTab({
             </div>
           </div>
 
-          <div className="rounded-2xl border border-gray-100 bg-slate-900 p-4 text-white space-y-4">
-            <div className="flex items-center justify-between">
+          <div
+            className="rounded-2xl border border-gray-100 bg-slate-900 p-4 text-white space-y-4"
+            dir="rtl"
+          >
+            <div className="flex items-center justify-between flex-row-reverse gap-3">
               <div className="text-right">
                 <h5 className="text-sm font-semibold text-white">
                   هم‌راستاسازی تیمی
@@ -2523,14 +2526,16 @@ function TechnicianCalendarPathTab({
                 );
               })}
             </div>
-            <Button
-              variant="secondary"
-              size="sm"
-              className="w-full border border-white/30 bg-white text-slate-900"
-              onClick={() => onOpenWorkflow("receive")}
-            >
-              ثبت وضعیت در برد
-            </Button>
+            <div className="flex justify-start">
+              <Button
+                variant="secondary"
+                size="sm"
+                className="w-full border border-white/30 bg-white text-slate-900 md:w-auto"
+                onClick={() => onOpenWorkflow("receive")}
+              >
+                ثبت وضعیت در برد
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -2720,8 +2725,11 @@ function TechnicianCalendarPathTab({
           </div>
         </div>
 
-        <div className="rounded-2xl border border-gray-100 bg-white p-4 space-y-3">
-          <div className="flex items-center justify-between">
+        <div
+          className="rounded-2xl border border-gray-100 bg-white p-4 space-y-3"
+          dir="rtl"
+        >
+          <div className="flex items-center justify-between flex-row-reverse gap-3">
             <h5 className="text-sm font-semibold text-gray-900 text-right">
               لینک‌های همکاری سریع
             </h5>
@@ -4041,8 +4049,8 @@ function TechnicianDashboardView() {
               )}
             </Card>
 
-            <Card className="p-6 space-y-4">
-              <div className="flex items-center justify-between">
+            <Card className="p-6 space-y-4" dir="rtl">
+              <div className="flex items-center justify-between flex-row-reverse gap-3">
                 <div className="text-right">
                   <h4 className="text-base font-semibold text-gray-900">
                     جزئیات گزارش منتخب
@@ -4114,7 +4122,7 @@ function TechnicianDashboardView() {
                     </div>
                   </div>
 
-                  <div className="flex flex-row-reverse gap-2">
+                  <div className="flex gap-2 justify-start" dir="ltr">
                     <Button
                       variant="primary"
                       size="sm"
@@ -4160,8 +4168,8 @@ function TechnicianDashboardView() {
           </section>
 
           <section className="grid gap-6 lg:grid-cols-2">
-            <Card className="p-6 space-y-4">
-              <div className="flex items-center justify-between">
+            <Card className="p-6 space-y-4" dir="rtl">
+              <div className="flex items-center justify-between flex-row-reverse gap-3">
                 <div className="text-right">
                   <h4 className="text-base font-semibold text-gray-900">
                     منابع کمکی گزارش
@@ -4579,8 +4587,11 @@ function TechnicianDashboardView() {
                 </div>
               </GlassCard>
 
-              <Card className="p-5 space-y-4 bg-white/95 border border-gray-100">
-                <div className="flex items-start justify-between gap-3">
+              <Card
+                className="p-5 space-y-4 bg-white/95 border border-gray-100"
+                dir="rtl"
+              >
+                <div className="flex items-start justify-between gap-3 flex-row-reverse">
                   <div className="text-right">
                     <h4 className="text-base font-semibold text-gray-900">
                       پروژه‌های فعال تکنسین
